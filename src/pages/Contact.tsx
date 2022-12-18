@@ -2,12 +2,11 @@ import Navbar from "./Navbar";
 import { Formik } from "formik";
 import * as Yup from "yup";
 import { useState } from "react";
-import "./Contact.scss";
+import "../styles/Contact.scss";
 import { Submit } from "../models/submitModel";
 const Contact = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [submitInfo, setSubmitInfo] = useState<Submit>();
-  console.log(submitInfo);
   return (
     <div className="contact">
       <Navbar />

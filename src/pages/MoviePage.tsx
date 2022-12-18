@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Movies from "../components/Movies";
 import { MOVIE_API, SEARCH_API } from "../enivorenment";
 import { Movie } from "../models/movieModel";
-import "./MoviePage.scss";
+import "../styles/MoviePage.scss";
 import Navbar from "./Navbar";
 
 const MoviePage = () => {

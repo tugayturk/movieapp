@@ -19,7 +19,6 @@ function Movies({ title, poster_path, overview, vote_average }: IMovies) {
       return "red";
     }
   };
-  console.log(poster_path);
   return (
     <div className="movie">
       <img

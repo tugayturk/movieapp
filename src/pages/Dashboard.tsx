@@ -1,6 +1,6 @@
-import React,{useEffect} from "react";
+import {useEffect} from "react";
 import Navbar from "./Navbar";
-import "./Dashboard.scss";
+import "../styles/Dashboard.scss";
 import "aos/dist/aos.css"
 import AOS from "aos"
 import { useNavigate } from "react-router-dom";

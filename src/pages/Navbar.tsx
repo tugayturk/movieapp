@@ -2,15 +2,15 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { logout } from "../firebase";
 import { logout as logoutHandle } from "../store/auth";
-import "./MoviePage.scss";
-import "./Navbar.scss";
+import "../styles/MoviePage.scss";
+import "../styles/Navbar.scss";
 
 const Navbar = () => {
   const { user } = useSelector((state: any) => state.auth);
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  const handleLogout = async (e: any) => {
+  const handleLogout = async () => {
     await logout();
     dispatch(logoutHandle());
     navigate("/", {

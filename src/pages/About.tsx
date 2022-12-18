@@ -1,6 +1,6 @@
 import  { useEffect } from "react";
 import Navbar from "./Navbar";
-import "./About.scss";
+import "../styles/About.scss";
 import AOS from "aos"
 import "aos/dist/aos.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
