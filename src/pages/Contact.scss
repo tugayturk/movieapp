@@ -1,0 +1,83 @@
+@import "../styles/mixin.scss";
+@import "../styles/variables.scss";
+.contact {
+  height: 100vh;
+  &__container {
+    height: 80%;
+    width: 70%;
+    margin: 1rem auto;
+    @include display(flex, center, center, row);
+    border-radius: 5px;
+
+    &__info {
+      width: 50%;
+      height: 80%;
+      color: $textColor;
+    }
+    &__form {
+      width: 50%;
+      height: 80%;
+    }
+  }
+  .form {
+    @include display(flex, space-evenly, center, column);
+    height: 100%;
+    margin: 1rem 1rem;
+   
+    &__label {
+      font-weight: 500;
+    }
+    &__input {
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+      outline: none;
+      width: 70%;
+      border: 1px solid #67686a;
+      margin: auto;
+    }
+    &__submitButton {
+      padding: 0.7rem;
+      width: 50%;
+      background-color: #3e79f7;
+      border-radius: 5px;
+      border: none;
+      margin: auto;
+      color: #f1f1f1;
+      &:disabled {
+        border: 1px solid #999999;
+        background-color: #cccccc;
+        color: #666666;
+      }
+    }
+  }
+  .resetButton {
+    background-color: #155af0;
+    border-radius: 5px;
+    border: none;
+    margin: auto;
+    color: #f1f1f1;
+    padding: 1rem;
+  }
+  .errorText {
+    color: $textColor;
+    font-style: italic;
+    font-family: $font-family
+  }
+}
+.submit {
+  height: 50vh;
+  margin: 10vh 0;
+  @include display(flex, space-between, center, column);
+
+  &__info {
+  margin-top: 5rem;
+  color: $textColor;
+  font-style: italic;
+  font-family: $font-family;
+  font-size: 1.5rem;
+  }
+  &__comment{
+    margin: 5rem 0;
+    color: $textColor;
+  }
+}

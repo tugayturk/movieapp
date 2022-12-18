@@ -1,0 +1,47 @@
+@import "../styles/mixin.scss";
+@import "../styles/variables.scss";
+
+.navbar {
+  @include display(flex, space-between, center, row);
+  background-color: #333;
+  min-height: 7vh;
+  height: 7vh;
+  font-family: $font-family;
+
+  &__title {
+    color: $textColor;
+    @include display(flex, space-evenly, center, row);
+    text-align: center;
+    margin-left: 1rem;
+  }
+  &__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    height: 7vh;
+  }
+  &__listitem {
+    float: left;
+
+    & a {
+      display: block;
+      color: $textColor;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      &:hover {
+        background-color: #111;
+      }
+    }
+  }
+}
+@include mq(tablet, max) {
+  .navbar {
+    height: 50px;
+    &__list{
+    height: 50px;
+    }
+  } 
+}

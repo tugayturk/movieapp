@@ -1,0 +1,44 @@
+.movie__container {
+  display: flex;
+  flex-direction: column;
+}
+.movie__lightHeader {
+  width: 100%;
+  height: 7vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.movie__searchBar {
+  width: 30%;
+  min-width: 300px;
+}
+.movie__search {
+  padding: 0.7rem;
+  margin-top: 0.5rem;
+  width: 60%;
+  border-radius: 9999px;
+  border: none;
+  background: #ef32d9; 
+  background: -webkit-linear-gradient(
+    to right,
+    #89fffd,
+    #ef32d9
+  );
+  background: linear-gradient(
+    to right,
+    #89fffd,
+    #ef32d9
+  ); 
+  &:focus {
+    outline: none;
+    width: 100%;
+  }
+}
+
+.movie__div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}

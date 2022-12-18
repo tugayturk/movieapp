@@ -1,0 +1,74 @@
+@import "../styles/mixin.scss";
+@import "../styles/variables.scss";
+
+.dashboard {
+  height: 93vh;
+  background-image: url("../../public/homepage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  &__text {
+    width: 70%;
+    margin: auto auto 10rem 4rem;
+    font-family: $font-family;
+  }
+  &__title {
+    width: 70%;
+    margin: auto;
+    color: $textColor;
+    font-size: 1.5rem;
+  }
+  &__buttonContainer {
+    width: 50%;
+    margin: auto;
+  }
+
+  &__button {
+    padding: 1rem;
+    width: 15vw;
+    background-color: #3e79f7;
+    border-radius: 5px;
+    border: none;
+    color: #f1f1f1;
+    margin: 10rem 4rem auto auto;
+    cursor: pointer;
+  }
+}
+
+@include mq(tablet, max) {
+  .dashboard {
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    background-size: cover;
+    background-attachment:fixed;
+    &__buttonContainer {
+      height: 50%;
+    }
+    &__button {
+      min-width: 200px;
+    }
+    &__title {
+      height: 50%;
+    }
+  }
+}
+@include mq(mobile, max) {
+  .dashboard {
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    background-size: cover;
+    background-attachment:fixed;
+    &__buttonContainer {
+      height: 50%;
+    }
+    &__button {
+      min-width: 200px;
+    }
+    &__title {
+      height: 50%;
+    }
+  }
+}

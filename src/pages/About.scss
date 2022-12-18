@@ -1,0 +1,50 @@
+@import "../styles/mixin.scss";
+@import "../styles/variables.scss";
+
+.about__page {
+  height: 100vh;
+  color: $textColor;
+}
+
+.about__title {
+  margin: 1rem 0;
+}
+
+.about__info {
+  width: 80%;
+  margin: auto;
+  line-height: 1.2rem;
+}
+
+.about__footer {
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+  margin-top: 5vh;
+
+  &__Address {
+    @include display(flex, space-evenly, center, row);
+    height: 50%;
+  }
+  &__Info {
+    @include display(flex, space-evenly, center, row);
+    height: 50%;
+  }
+}
+
+@include mq(tablet, max) {
+  .about__container {
+    height: 1500px;
+  }
+  .about__footer{
+    height: 1000px;
+  }
+}
+@include mq(mobile, max) {
+  .about__container {
+    height:1500px;
+  }
+  .about__footer{
+    height: 1000px;
+  }
+}
