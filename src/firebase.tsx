@@ -31,6 +31,7 @@ export const login = async (email:string, password:string) => {
     const { user } = await signInWithEmailAndPassword(auth, email, password);
     return user;
   } catch (e:any) {
+    console.log(e)
     toast.error(e.message);
   }
 };
